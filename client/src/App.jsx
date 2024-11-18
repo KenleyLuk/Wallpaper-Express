@@ -81,11 +81,6 @@ function App() {
       </header>
 
       <div className="upload-section">
-        {selectedFile && (
-          <div className="image-preview">
-            <img src={imagePreview} alt="Selected file" />
-          </div>
-        )}
         <div className="button-container">
           <img className="uploadImage" src={uploadImage} alt="image icon" />
           <div className="dragTextContainer">
@@ -103,6 +98,13 @@ function App() {
           onChange={handleFileChange}
         />
       </div>
+    
+        {selectedFile && (
+          <div>
+            <img className="uploadedContainer" src={imagePreview} alt="Selected file" />
+          </div>
+        )}
+
       <div className="submit-container">
         <button className="submit-button" onClick={handleUpload}>
           Submit

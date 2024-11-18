@@ -20,10 +20,10 @@ header {
   border-radius: 8px;
   place-items: center;
   margin-left: 30%;
-  margin-right:30%;
-  margin-top: 99px;
+  margin-right: 30%;
+  margin-top: 60px;
   justify-content: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .submit-container {
@@ -34,12 +34,12 @@ header {
 }
 
 .submit-button {
-  /* margin-left: 20%; */  /* 可以移除这一行 */
+  /* margin-left: 20%; */ /* 可以移除这一行 */
   font-size: 16px;
-  color: #FFFFFF;
-  background-color: #02AFF3;
+  color: #ffffff;
+  background-color: #02aff3;
   border-radius: 20px;
-  margin-top: 60px;
+  margin-top: 20px;
   padding: 14px 61px; /* 调整按钮的内边距 */
 }
 
@@ -49,43 +49,64 @@ header {
   align-items: center;
 }
 
-  .uploadImage {
-    width: 53px;
-    height: 40px;
-    display: block;
-    margin: auto;
-    margin-top: 20px; /* Adjust as needed */
-  }
+.uploadImage {
+  width: 53px;
+  height: 40px;
+  display: block;
+  margin: auto;
+  margin-top: 20px; /* Adjust as needed */
+}
 
-  .dragTextContainer {
-    margin-top: 17px;
-    display: flex;
-    flex-direction: row;
-  }
+.dragTextContainer {
+  margin-top: 17px;
+  display: flex;
+  flex-direction: row;
+}
 
-  .uploadText {
-    font-size: 16px;
-    color: #02AFF3;
-  }
+.uploadText {
+  font-size: 16px;
+  color: #02aff3;
+}
 
-  .dropText {
-    margin-left: 5px;
-    font-size: 16px;
-    color: #333333; /* 设置文本颜色为蓝色 */
-  }
+.dropText {
+  margin-left: 5px;
+  font-size: 16px;
+  color: #333333; /* 设置文本颜色为蓝色 */
+}
 
-  .maximumFileTtext {
-    margin-top: 4px;
-    font-size: 14px;
-    color: #666666;
-  }
+.maximumFileTtext {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #666666;
+}
+
+.uploadedContainer {
+  margin-top: 20px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #02aff3;
+  border-radius: 10px;
+  margin-left: 30%;
+}
+
+.image-preview {
+  display: inline-block;
+  margin: 5px;
+}
+
+.image-preview img {
+  max-width: 100px;
+  max-height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
 .file-bar {
-    background-color: #f0f0f0;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .file-bar p {
-    margin: 0;
-  }
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.file-bar p {
+  margin: 0;
+}
