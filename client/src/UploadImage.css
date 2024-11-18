@@ -1,0 +1,91 @@
+header {
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 96px;
+}
+
+.title {
+  font-size: 36px;
+}
+
+.subtitle {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.upload-section {
+  display: flex;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  place-items: center;
+  margin-left: 30%;
+  margin-right:30%;
+  margin-top: 99px;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: flex-end; /* 将按钮放置在容器的右侧 */
+  margin-right: 30%;
+  align-self: flex-end;
+}
+
+.submit-button {
+  /* margin-left: 20%; */  /* 可以移除这一行 */
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #02AFF3;
+  border-radius: 20px;
+  margin-top: 60px;
+  padding: 14px 61px; /* 调整按钮的内边距 */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .uploadImage {
+    width: 53px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    margin-top: 20px; /* Adjust as needed */
+  }
+
+  .dragTextContainer {
+    margin-top: 17px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .uploadText {
+    font-size: 16px;
+    color: #02AFF3;
+  }
+
+  .dropText {
+    margin-left: 5px;
+    font-size: 16px;
+    color: #333333; /* 设置文本颜色为蓝色 */
+  }
+
+  .maximumFileTtext {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #666666;
+  }
+
+.file-bar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .file-bar p {
+    margin: 0;
+  }
