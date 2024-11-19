@@ -39,6 +39,18 @@ function App() {
     }
   };
 
+  const handleDragOver = (event) => {
+    console.log("handleDragOver")
+    event.preventDefault();
+  };
+
+  const handleDrop = (event) => {
+    event.preventDefault();
+    const file = event.dataTransfer.files[0];
+    const fakeEvent = { target: { files: [file] } }; // Creating a fake event object with the file
+    handleFileChange(fakeEvent);
+};
+
   const handleReset = () => {
     setSelectedFile(null);
   };
@@ -80,7 +92,7 @@ function App() {
         </div>
       </header>
 
-      <div className="upload-section">
+      <div className="upload-section" onDragOver={handleDragOver} onDrop={handleDrop}>
         <div className="button-container">
           <img className="uploadImage" src={uploadImage} alt="image icon" />
           <div className="dragTextContainer">
